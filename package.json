@@ -1,0 +1,20 @@
+{
+  "name": "vit-lost-found-portal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "VIT Campus Lost & Found Recovery Portal: report, verify and return lost items on the VIT Vellore campus.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "setup": "npm install --prefix server && npm install --prefix client",
+    "db:init": "npm run db:init --prefix server",
+    "db:seed": "npm run db:seed --prefix server",
+    "db:reset": "npm run db:reset --prefix server",
+    "dev": "node scripts/dev.js",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "test": "npm test --prefix server"
+  }
+}
